@@ -11,7 +11,7 @@ const works = [
   {
     title: "Air Ceylon Ltd",
     category: "Travel Advertising",
-    image: "images/air.png",
+    image: "images/Air.png",
     color: "var(--color-accent-2)"
   },
   {
