@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vintage Ceylon design website UI</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- External JS -->
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <!-- Texture overlay -->
+  <div class="c-textureOverlay" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav class="c-nav l-container" aria-label="Primary">
+    <div class="LogoContainer">
+      <div class="Logo" aria-hidden="true">
+        <img src="images/logo.png" alt="Aruni Lanka Logo">
+      </div>
+      <span class="ds-heading c-brandName">Aruni Lanka studio</span>
+    </div>
+
+    <button
+      class="c-menuBtn"
+      type="button"
+      id="menuBtn"
+      aria-label="Open menu"
+      aria-controls="navLinks"
+      aria-expanded="false"
+    >
+      ☰
+    </button>
+
+    <div class="c-navLinks ds-heading" id="navLinks">
+      <a class="c-navlink" href="#work">Our Work</a>
+      <a class="c-navlink" href="#about">The Studio</a>
+      <a class="c-navlink" href="#contact">Telegram</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="c-hero l-container">
+    <div class="c-heroCopy">
+      <div class="c-badge c-badge--stamp ds-accent">Established 1962</div>
+
+      <h1 class="c-heroTitle ds-accent">
+        <img src="images/name.png" alt="Aruni Lanka Logo"><br>
+        <span class="u-text-accent-2">Lanka studio</span>
+      </h1>
+
+      <p class="c-heroLead">
+        Experience the fine art of modern visual communication. We specialize in lithography,
+        hand-drawn typography.<br>ලිතෝග්‍රැෆි හෙවත් ,අතින් අඳින ලද මුද්‍රණ ශිල්පය මගින් ඔබගේ ව්‍යාපාරයේ , උත්සවයේ හෝ සියලුම ආකාරයේ පෝස්ටර් අපගේ ආයතනයෙන් ලබා ගත හැක.
+      </p>
+
+      <a class="c-btn c-btn--primary ds-heading" href="#work">VIEW ARCHIVES</a>
+    </div>
+
+    <div class="c-heroMedia">
+      <div class="c-frame c-frame--tinted">
+        <img
+          class="c-heroImg"
+          src="images/heroImg.png"
+          alt="Sri Lanka landscape"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT (simple section so your nav isn't fake) -->
+  <section id="about" class="l-container c-section">
+    <div class="c-sectionHead">
+      <h2 class="ds-heading c-sectionTitle">The Studio</h2>
+      <p class="ds-accent c-sectionKicker">Craft, print, and public memory</p>
+    </div>
+
+    <p style="max-width: 70ch; font-size: 1.1rem; margin: 0;">
+      Aruni Lanka is a vintage-inspired design studio focused on poster-style communication — bold type,
+      imperfect textures, and modern layout discipline. We treat every piece like an artifact, not a template.
+    </p>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="l-container c-section">
+    <div class="c-sectionHead">
+      <h2 class="ds-heading c-sectionTitle">Selected Works</h2>
+      <p class="ds-accent c-sectionKicker">Printing &amp; Publicity</p>
+    </div>
+
+    <!-- Cards get injected by app.js -->
+    <div class="l-grid l-grid--cards" id="portfolio-container" aria-live="polite"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="c-footer" id="contact">
+    <div class="l-container c-footerGrid">
+      <div>
+        <h3 class="ds-heading c-footerTitle">The Studio</h3>
+        <p class="c-footerText">Galle Road, Colombo 03.<br />Ceylon.</p>
+      </div>
+
+      <div class="c-footerCenter">
+        <div class="ds-heading c-footerYear">1962</div>
+      </div>
+
+      <div class="c-footerRight">
+        <h3 class="ds-heading c-footerTitle">Contact</h3>
+        <p class="c-footerText">Enquiries: info@arunidesigns.lk</p>
+      </div>
+    </div>
+
+    <div class="c-footerBottom">
+      &copy; 1955 Aruni Design Studio. All Rights Reserved.
+    </div>
+  </footer>
+</body>
+</html>
